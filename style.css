@@ -1,0 +1,12 @@
+html {
+  background-image: url("diapositiva1.jpg");
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+    }
+
+#main-header {
+      background: #050505;
+    	color: orange;
+    	height: 80px;
+        }
