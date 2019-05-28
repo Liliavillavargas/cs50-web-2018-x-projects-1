@@ -1,103 +1,70 @@
-html {
-  background-image: url("diapositiva1.jpg");
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-    }
-
 #main-header {
-      background: #050505;
       font-family: Boomerang;
       font-style: italic;
     	color: orange;
     	height: 80px;
+      text-align: right;
+      margin-right: 50px;
+      word-spacing: 5px;
+      letter-spacing: 3px;
         }
-        /* Made with love by Mutiullah Samim*/
+        /* Template Register and Login*/
 
         @import url('https://fonts.googleapis.com/css?family=Numans');
 
-        html,body{
+ body   {
         background-image: url("diapositiva1.jpg");
+        background-color: no repeat;
         background-size: cover;
-        background-repeat: no-repeat;
         height: 100%;
         font-family: 'Numans', sans-serif;
         }
-
-        .container{
+.card-body p{
+          color: white;
+        }
+.card-body {
+          width: auto;
+          margin-bottom: 20px;
+        }
+.container{
         height: 100%;
         align-content: center;
         }
 
-        .card{
+.boxcard{
         height: 370px;
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-top: 100px;
+        margin-bottom: 20px;
         width: 400px;
-        background-color: rgba(0,0,0,0.5) !important;
+        background: rgba(0,0,0,.5);
         }
 
-        .social_icon span{
-        font-size: 60px;
-        margin-left: 10px;
-        color: #FFC312;
-        }
-
-        .social_icon span:hover{
-        color: white;
-        cursor: pointer;
-        }
-
-        .card-header h3{
+.boxcard-header h3{
         color: white;
         }
 
-        .social_icon{
-        position: absolute;
-        right: 20px;
-        top: -45px;
-        }
-
-        .input-group-prepend span{
-        width: 50px;
-        background-color: #FFC312;
-        color: black;
-        border:0 !important;
-        }
-
-        input:focus{
-        outline: 0 0 0 0  !important;
-        box-shadow: 0 0 0 0 !important;
+input:focus{
+        outline: 5 0 0 5;
+        box-shadow: 0 2 0 5;
 
         }
-
-        .remember{
-        color: white;
-        }
-
-        .remember input
-        {
-        width: 20px;
-        height: 20px;
-        margin-left: 15px;
-        margin-right: 5px;
-        }
-
-        .login_btn{
+.login_btn  {
+        border: none;
+        outline:none;
         color: black;
         background-color: #FFC312;
         width: 100px;
         }
 
-        .login_btn:hover{
+.login_btn:hover  {
         color: black;
-        background-color: white;
+        background-color:orange;
         }
 
-        .links{
-        color: white;
+.links{
+        color: orange;
         }
 
-        .links a{
+.links a{
         margin-left: 4px;
         }
