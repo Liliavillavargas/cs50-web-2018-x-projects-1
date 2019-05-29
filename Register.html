@@ -5,17 +5,35 @@
     <meta charset="utf-8">
     <!--Title WebPage-->
     <title>CoffeeBook</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="stylo.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <div class="Login">
+      <form>
+         <div class="login_text">
+            <p>Login Password</p>
+              <div class=login_btn>
+                <input type="text" name =""class="form" placeholder="Username"  maxlength="20">
+                <input type="password" name="" class="form" placeholder="*****"  maxlength="8">
+                <input type="submit" value="Enviar">
+              </div>
+         </div>
+          <div class="Password">
+              <a href="#">Forgot your password?</a>
+          </div>
+
+      </form>
+    </div>
+
 
     <!-- Diseño encabezado, definicion estilos -->
       <header>
         <header id="main-header">
-      		 <h1 style="font-size:10vw">Coffe-eBook<h1>
+      		 <h1 style="font-size:10vw">Coffe-EBook<h1>
              <span><i class="banderacolombia"></i></span>
              <h2> Montería, Córdoba, Colombía<img src="bandera.jpg" alt="banderacol"></h2>
+
 
       </header>
 
@@ -25,36 +43,36 @@
   <div class="container">
       <div class="boxcard">
           <div class="boxcard-header">
-              <h3>Sign In</h3>
+              <h3>Register</h3>
           </div>
               <div class="card-body">
                  <form>
                         <div class="username">
-                          <p>Enter Email</p>
-                          <input type="text" name =""class="form-control" placeholder="e-mail">
+                          <p>Enter Username</p>
+                            <input type="text" name =""class="form-control" placeholder="Username">
+                            <p>Enter Email</p>
+                            <input type="text" name =""class="form-control" placeholder="e-mail">
                         </div>
                         <div class="password">
-                          <p>Enter Password</p>
-                          <input type="password" class="form-control" placeholder="*******">
-                        </div>
-                        <div class="form">
-                                <input type="submit" value="Login" class="btn float-right login_btn">
+                            <p>Enter Password</p>
+                            <input type="password" class="form-control" placeholder="*******">
+                            <div class="Welcome">
+                                <div class="transbox">
+                                  <p>Welcome !!</p>
+                                </div>
+                            </div>
 
+                        </div>
+                        <div class="login_reg">
+                            <input type="submit" value="Login" class="btn float-right login_reg">
                         </div>
                  </form>
-
-              </div>
-              <div class="card-footer">
-                  <div class="d-flex justify-content-center links">
-                      Don't have an account?<a href="#">Sign Up</a>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                      <a href="#">Forgot your password?</a>
-                  </div>
-              </div>
       </div>
-
   </div>
+      <footer id="main-footer">
+          <h4>Copyright &#169; Todos los derechos reservados. Codigo Binario.<h4>
+
+      </footer>
 
   </body>
 </html>
