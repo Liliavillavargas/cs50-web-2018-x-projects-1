@@ -1,0 +1,81 @@
+#main-header {
+      font-family: Boomerang;
+      font-style: italic;
+    	color: orange;
+    	height: 80px;
+      text-align: right;
+      margin-right: 50px;
+      word-spacing: 5px;
+      letter-spacing: 3px;
+        }
+#main-footer {
+              font-family: Boomerang;
+              font-style: italic;
+            	color: orange;
+            	height: 10px;
+              text-align: right;
+              margin-right: 50px;
+              word-spacing: 5px;
+              letter-spacing: 3px;
+                }
+        /* Template Register and Login*/
+
+        @import url('https://fonts.googleapis.com/css?family=Numans');
+
+ body   {
+        background-image: url("diapositiva1.jpg");
+        background-color: no repeat;
+        background-size: cover;
+        height: 100%;
+        font-family: 'Numans', sans-serif;
+        }
+.login_text p {
+        color: orange;
+        margin-left: 50px;
+        word-spacing: 150px;
+    }
+.login_btn  {
+        margin-left: 30px;
+        }
+.Password {
+        margin-left: 35px;
+          }
+.card-body p{
+        color: orange;
+    }
+.card-body {
+        width: auto;
+        margin-bottom: 20px;
+  }
+.container{
+        height: 100%;
+        align-content: center;
+          }
+
+.boxcard{
+        height: 370px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        width: 400px;
+        background: rgba(0,0,0,.3);
+        }
+
+.boxcard-header h3{
+        color: white;
+      }
+
+input:focus{
+        outline: 5 0 0 5;
+        box-shadow: 0 2 0 5;
+      }
+.login_reg  {
+        border: none;
+        outline:none;
+        color: black;
+        background-color: #FFC312;
+        width: 100px;
+    }
+.login_reg:hover  {
+            color: black;
+            background-color:orange;
+            }
