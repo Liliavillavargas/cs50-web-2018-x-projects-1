@@ -1,3 +1,4 @@
+/*Header Register*/
 #main-header {
       font-family: Boomerang;
       font-style: italic;
@@ -8,8 +9,9 @@
       word-spacing: 5px;
       letter-spacing: 3px;
         }
+        /*Footer Register*/
 #main-footer {
-  ont-family: Boomerang;
+  font-family: Boomerang;
   font-style: italic;
   color: orange;
   height: 10px;
@@ -17,7 +19,8 @@
   word-spacing: 5px;
   letter-spacing: 3px;
     }
-        /* Template Register and Login*/
+
+/* Template Register and Login*/
 
         @import url('https://fonts.googleapis.com/css?family=Numans');
 
@@ -30,15 +33,6 @@
         height: 100%;
         font-family: 'Numans', sans-serif;
         }
-body.search {
-  background-image: url("diapositiva2.jpg");
-  background-position: center center;
-  background-attachment: fixed;
-  background-color: no repeat;
-  background-size: cover;
-  height: 100%;
-  font-family: 'Numans'sans-serif;
-}
 .login_text p {
         color: orange;
         margin-top: 25px;
@@ -53,16 +47,9 @@ body.search {
           }
 .card-body p{
         color: orange;
-    }
-.card-body {
         width: auto;
         margin-bottom: 20px;
-  }
-.container{
-        height: 100%;
-        align-content: center;
-          }
-
+    }
 .boxcard{
         height: 370px;
         margin-top: 40px;
@@ -70,56 +57,45 @@ body.search {
         width: 400px;
         background: rgba(0,0,0,.3);
         }
-.Navegar_Barra {
-        margin-top: 40px;
-        width: 530px;
-        background-color: #eae6ca;
-}
-
 .boxcard-header h3{
         color: white;
-      }
+              }
 
 input:focus{
-        outline: 5 0 0 5;
-        box-shadow: 0 2 0 5;
-      }
-.login_reg  {
-        border: none;
-        outline:none;
-        color: black;
-        background-color: #FFC312;
-        width: 100px;
-    }
-.login_reg:hover  {
-        color: black;
-        background-color:orange;
+      outline: 5 0 0 5;
+      box-shadow: 0 2 0 5;
+              }
 
-          }
-  /* navegacion estilos*/
+/*Template search*/
+
+body.search {
+        background-image:url("diapositiva2.jpg");
+        background-position: center center;
+        background-attachment: fixed;
+        background-color: no repeat;
+        background-size: cover;
+        height: 100%;
+        font-family: 'Numans'sans-serif;
+        }
 ul {
+        background-color: #f8e17e;
         list-style-type: none;
-        margin: 15px;
-        padding: 20px;
+        letter-spacing: 3px;
+        font-size: 15px;
+        font-weight: bold;
+        border: 1px solid #555;
+        }
 
-          }
 li a {
-       display: block;
-       color: #000;
-       padding: 28px 26px;
-       text-decoration: none;
-            }
-/* Change the link color on hover */
-li a:hover {
-      background-color:#ece2c6;
-      color: black;
-            }
+        text-align: center;
+        border-bottom: 1px solid #555;
+        }
+ul li a:hover {
+          background: #e6d690;
+}
+
+
+
 
 /* pendiente configurar para dispositivos moviles y otros
 @media only screen and (max-width: 767px) {
-
-            body.search {
-
-            background-image: url(diapositiva1.jpg);
-
-            }*///
