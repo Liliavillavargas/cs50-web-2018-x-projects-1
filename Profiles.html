@@ -56,17 +56,42 @@
 
 
 
-  <body class="search">
-    <p>.............en esta pagina se buscaran sobre la biblioteca suministrada</p>
 
 
 
 
 
 
-  </body>
+<body class="Profiles">
+
+  <p>cargar la base de datos de registrarse inicialmente, completar...??? </p>
+      <h3>cargar una Imagen </h3>
+
+          <input type="file" id="myFile">
+
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myFile");
+                x.disabled = true;
+              }
+            </script>
+
+            <form action="/action_page.php">
+                Pais:<br>
+                <input type="text" name="firstname" value="text">
+                <br>
+                Phone:<br>
+                <input type="text" name="lastname" value="77777">
+                <br><br>
+
+                  <input type="radio" name="gender" value="male" checked> Male<br>
+                  <input type="radio" name="gender" value="female"> Female<br>
+
+                  Birthday:
+                  <input type="date" name="bday">
+                  <input type="submit" value="Submit">
+                </form>
 
 
-
-
+</body>
 </html>

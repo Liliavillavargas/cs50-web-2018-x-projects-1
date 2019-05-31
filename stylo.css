@@ -84,6 +84,7 @@ ul {
         font-size: 15px;
         font-weight: bold;
         border: 1px solid #555;
+        
         }
 
 li a {
@@ -93,6 +94,16 @@ li a {
 ul li a:hover {
           background: #e6d690;
 }
+/*Template Profile*/
+body.Profiles {
+        background-image:url("diapositiva3.jpg");
+        background-position: center center;
+        background-color: no repeat;
+        background-size: cover;
+        height: 100%;
+        font-family: 'Numans'sans-serif;
+        }
+
 
 
 
