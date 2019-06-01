@@ -9,24 +9,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="Login">
-      <form>
-         <div class="login_text">
-            <p>Login Password</p>
-              <div class=login_btn>
-                <input type="text" placeholder="Username"  maxlength="30">
-                <input type="password" placeholder="*****"  minlength="8">
-                <a href="search.html" type="submit" class="btn btn-info" role="button">Enviar</a>
+      <div class="login-container">
+        <form class="form-inline" action="/action_page.php">
+            <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                  <a href="search.html" class="btn btn-outline-light" role="button">Enviar</a>
 
-              </div>
-         </div>
+        </form>
+
+      </div>
           <div class="Password">
               <a href="#">Forgot your password?</a>
           </div>
-
-      </form>
-    </div>
-
 
     <!-- Diseño encabezado, definicion estilos -->
       <header>
@@ -49,14 +45,14 @@
               <div class="card-body">
                  <form>
                         <div class="username">
-                          <p>Enter Username</p>
-                            <input type="text" name =""class="form-control" placeholder="Username">
+                          <p>Enter Username (min.8 char)</p>
+                            <input type="text" class="form-control" placeholder="Username" minlength="8" maxlength="30">
                             <p>Enter Email</p>
-                            <input type="text" name =""class="form-control" placeholder="e-mail">
+                            <input type="text" class="form-control" placeholder="e-mail" minlength="16" maxlength="25">
                         </div>
                         <div class="password">
-                            <p>Enter Password</p>
-                            <input type="password" class="form-control" placeholder="*******">
+                            <p>Enter Password (min 8 char)</p>
+                            <input type="password" class="form-control" placeholder="*******"  minlength="8" maxlength="16">
                             <div class="Welcome">
                                 <div class="transbox">
                                   <p>Welcome !!</p>
@@ -65,14 +61,14 @@
 
                         </div>
                         <div class="login_reg">
-                          <a input type="submit" href="search.html" class="btn btn-info" role="button">Login</a>
+                          <a href="search.html" class="btn btn-outline-light" role="button">Login</a>
 
                         </div>
                  </form>
       </div>
   </div>
       <footer id="main-footer">
-          <h4>&#169; Todos los derechos reservados.Codigo Binario.<h4>
+          <br><h4>"Para viajar lejos, no hay mejor nave, que un libro! ",&#169;Todos los derechos reservados. Codigo Binario<h4>
 
       </footer>
 

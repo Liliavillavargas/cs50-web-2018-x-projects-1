@@ -2,7 +2,7 @@
 #main-header {
       font-family: Boomerang;
       font-style: italic;
-    	color: orange;
+    	color: #ffff00;
     	height: 80px;
       text-align: right;
       margin-right: 50px;
@@ -13,11 +13,11 @@
 #main-footer {
   font-family: Boomerang;
   font-style: italic;
-  color: orange;
-  height: 10px;
-  text-align: right;
-  word-spacing: 5px;
-  letter-spacing: 3px;
+  color: #ffff00;
+  height: 20px;
+  text-align: justify;
+  word-spacing: 4px;
+  letter-spacing: 2.5px;
     }
 
 /* Template Register and Login*/
@@ -33,20 +33,25 @@
         height: 100%;
         font-family: 'Numans', sans-serif;
         }
-.login_text p {
-        color: orange;
+.login-container {
+        color: #ffff00;
         margin-top: 25px;
         margin-left: 50px;
         word-spacing: 150px;
     }
 .login_btn  {
+        color:rgba(0,0,0,.3);
         margin-left: 30px;
         }
+.login_reg  {
+        color:rgba(0,0,0,.3);
+        margin-left: 30px;
+                }
 .Password {
         margin-left: 35px;
           }
 .card-body p{
-        color: orange;
+        color: #ffff00;
         width: auto;
         margin-bottom: 20px;
     }
@@ -69,7 +74,7 @@ input:focus{
 /*Template search*/
 
 body.search {
-        background-image:url("diapositiva2.jpg");
+        background-image:url("diapositiva3.jpg");
         background-position: center center;
         background-attachment: fixed;
         background-color: no repeat;
@@ -84,7 +89,7 @@ ul {
         font-size: 15px;
         font-weight: bold;
         border: 1px solid #555;
-        
+
         }
 
 li a {
@@ -96,8 +101,9 @@ ul li a:hover {
 }
 /*Template Profile*/
 body.Profiles {
-        background-image:url("diapositiva3.jpg");
+        background-image:url("diapositiva2.jpg");
         background-position: center center;
+        background-attachment: fixed;
         background-color: no repeat;
         background-size: cover;
         height: 100%;
