@@ -11,14 +11,15 @@
 
       <div class="login-container">
         <form class="form-inline" action="/action_page.php">
-            <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                  <label for="pwd">Password:</label>
-                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
-                  <a href="search.html" class="btn btn-outline-light" role="button">Enviar</a>
-
+            <div class="login_text">
+                <p>Email:    Password:</p>
+                  <div class=login_btn>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    <a href="search.html" class="btn btn-outline-light" role="button">Enviar</a>
+                  </div>
+            </div>
         </form>
-
       </div>
           <div class="Password">
               <a href="#">Forgot your password?</a>
@@ -48,7 +49,7 @@
                           <p>Enter Username (min.8 char)</p>
                             <input type="text" class="form-control" placeholder="Username" minlength="8" maxlength="30">
                             <p>Enter Email</p>
-                            <input type="text" class="form-control" placeholder="e-mail" minlength="16" maxlength="25">
+                            <input type="email" class="form-control" placeholder="e-mail" minlength="16" maxlength="25">
                         </div>
                         <div class="password">
                             <p>Enter Password (min 8 char)</p>

@@ -34,24 +34,42 @@
         font-family: 'Numans', sans-serif;
         }
 .login-container {
-        color: #ffff00;
-        margin-top: 25px;
+        color: #82c982;
+        margin-top: 10px;
+        margin-left: 10px;
+        }
+.login_text p {
+        color: #82c982;
+        margin-top: 5px;
         margin-left: 50px;
         word-spacing: 150px;
-    }
-.login_btn  {
-        color:rgba(0,0,0,.3);
-        margin-left: 30px;
-        }
-.login_reg  {
-        color:rgba(0,0,0,.3);
-        margin-left: 30px;
-                }
+            }
+.login_btn
+      {
+        margin-left: 10px;
+
+      }
 .Password {
-        margin-left: 35px;
+        margin-left: 100px;
+
+          }
+a:link {
+        color: #82c982;
+        background-color: transparent;
+        text-decoration: none;
+          }
+a:visited {
+        color:#82c982;
+        background-color: transparent;
+        text-decoration: none;
+          }
+a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
           }
 .card-body p{
-        color: #ffff00;
+        color: #82c982;
         width: auto;
         margin-bottom: 20px;
     }
@@ -59,7 +77,7 @@
         height: 370px;
         margin-top: 40px;
         margin-bottom: 20px;
-        width: 400px;
+        width:400px;
         background: rgba(0,0,0,.3);
         }
 .boxcard-header h3{
@@ -74,7 +92,7 @@ input:focus{
 /*Template search*/
 
 body.search {
-        background-image:url("diapositiva3.jpg");
+        background-image:url("diapositiva5.jpg");
         background-position: center center;
         background-attachment: fixed;
         background-color: no repeat;
@@ -110,9 +128,31 @@ body.Profiles {
         font-family: 'Numans'sans-serif;
         }
 
+.boxprofile{
+        height: 700px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        width: 700px;
+        background: rgba(0,0,0,.50);
+        }
+.boxinfo {
+        margin-left: 220px;
+        }
+.card {
+      border: 1px solid #ccc;
+      margin-left: 25px;
+}
 
+/*Template Ebooks*/
+body.Ebooks {
+        background-image:url("diapositiva3.jpg");
+        background-position: center center;
+        background-attachment: fixed;
+        background-color: no repeat;
+        background-size: cover;
+        height: 100%;
+        font-family: 'Numans'sans-serif;
+                }
 
-
-
-/* pendiente configurar para dispositivos moviles y otros
-@media only screen and (max-width: 767px) {
+/* pendiente configurar para dispositivos moviles y otros/
+  @media screen and (max-width: 600px) {

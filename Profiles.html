@@ -38,7 +38,7 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="Profiles.html">My Profile</a>
-                    
+
                   </li>
                 </ul>
 
@@ -54,45 +54,49 @@
 
       </header>
   </head>
+  <body class="Profiles">
+          <div class="container">
+              <div class="boxprofile">
+                   <p>cargar la base de datos de registrarse inicialmente, completar...??? </p>
+                      <h3>cargar una Imagen </h3>
+
+                  <div class="card" style="width:370px">
+                    <center>
+                      <img src="fotoperfil.png" alt="camera" width="100" height="100">
+
+                      <form action="/action_page.php">
+                          <input type="file" name="" value="Upload"><br><br>
+                              <input type="submit" value="Send">
+                                <script>
+                                    function myFunction() {
+                                        var x = document.getElementById("myFile");
+                                            x.disabled = true;
+                                            }
+                                </script>
+                      </form>
+                    </center>
+                  </div>
+                      <div class="boxinfo">
+
+                            <p>PARA LLENAR LA INFORMACION</p>
+                                <form action="/action_page.php">
+                                    Pais:<br>
+                                          <input type="text" name="firstname" value="text"><br>
+                                    State:<br>
+                                          <input type="text" name="firstname" value="text"><br>
+                                    City:<br>
+                                          <input type="text" name="firstname" value="text"><br>
+                                    Phone:<br>
+                                          <input type="text" name="lastname" value="77777"><br>
+                                          <input type="radio" name="gender" value="male" checked> Male<br>
+                                          <input type="radio" name="gender" value="female"> Female<br>
+                                    Birthday:
+                                            <input type="date" name="bday">
+                                            <input type="submit" value="Submit">
+                                          </form>
+            </div>
 
 
-
-
-
-
-
-
-
-<body class="Profiles">
-
-  <p>cargar la base de datos de registrarse inicialmente, completar...??? </p>
-      <h3>cargar una Imagen </h3>
-
-          <input type="file" id="myFile">
-
-            <script>
-              function myFunction() {
-                var x = document.getElementById("myFile");
-                x.disabled = true;
-              }
-            </script>
-
-            <form action="/action_page.php">
-                Pais:<br>
-                <input type="text" name="firstname" value="text">
-                <br>
-                Phone:<br>
-                <input type="text" name="lastname" value="77777">
-                <br><br>
-
-                  <input type="radio" name="gender" value="male" checked> Male<br>
-                  <input type="radio" name="gender" value="female"> Female<br>
-
-                  Birthday:
-                  <input type="date" name="bday">
-                  <input type="submit" value="Submit">
-                </form>
-
-
+      </div>
 </body>
 </html>
