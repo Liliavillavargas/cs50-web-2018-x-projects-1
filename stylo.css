@@ -14,11 +14,12 @@
   font-family: Boomerang;
   font-style: italic;
   color: #ffff00;
-  height: 20px;
-  text-align: justify;
+  height: 100px;
+  text-align: center;
   word-spacing: 4px;
   letter-spacing: 2.5px;
-    }
+  background: #f75e25;
+}
 
 /* Template Register and Login*/
 
@@ -34,12 +35,12 @@
         font-family: 'Numans', sans-serif;
         }
 .login-container {
-        color: #82c982;
+        color: #f75e25;
         margin-top: 10px;
         margin-left: 10px;
         }
 .login_text p {
-        color: #82c982;
+        color: #f75e25;
         margin-top: 5px;
         margin-left: 50px;
         word-spacing: 150px;
@@ -54,12 +55,12 @@
 
           }
 a:link {
-        color: #82c982;
+        color: #f75e25;
         background-color: transparent;
         text-decoration: none;
           }
 a:visited {
-        color:#82c982;
+        color:#f75e25;
         background-color: transparent;
         text-decoration: none;
           }
@@ -69,7 +70,7 @@ a:hover {
         text-decoration: underline;
           }
 .card-body p{
-        color: #82c982;
+        color: #f75e25;
         width: auto;
         margin-bottom: 20px;
     }
@@ -81,7 +82,7 @@ a:hover {
         background: rgba(0,0,0,.3);
         }
 .boxcard-header h3{
-        color: white;
+        color: #f75e25;
               }
 
 input:focus{
@@ -100,6 +101,16 @@ body.search {
         height: 100%;
         font-family: 'Numans'sans-serif;
         }
+
+.boxsearch {
+        height: 900px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width:900px;
+        background: #fcead4;
+
+}
+/*Liks de navegacion del sitio*/
 ul {
         background-color: #f8e17e;
         list-style-type: none;
@@ -127,14 +138,19 @@ body.Profiles {
         height: 100%;
         font-family: 'Numans'sans-serif;
         }
+.boxinfo{
+        margin-top: 80px;
+        margin-left: 45px;
+        color: #f75e25;
 
-.boxprofile{
-        height: 700px;
-        margin-top: 100px;
-        margin-bottom: 20px;
-        width: 700px;
-        background: rgba(0,0,0,.50);
         }
+.boxprofile{
+        height: 900px;
+        margin-top: 100px;
+        width: 900px;
+        background: rgba(0,0,0,.60);
+        }
+        /*
 .boxinfo {
         margin-left: 220px;
         }

@@ -17,39 +17,39 @@
     <!-- Diseño encabezado, definicion estilos -->
       <header>
         <nav class="navbar navbar-expand-sm bg-ligth navbar-light">
-          <a class="navbar-brand" href="#">
-
-          <!-- Brand -->
+          <a class="navbar-brand" href="#">          <!-- Brand -->
           <a class="navbar-brand" href="#"></a>
-
           <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
 <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                      <a class="nav-link" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Ebooks.html">My Books</a>
+                      <a class="nav-link" href="Ebooks.html">My Books</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Profiles.html">My Profile</a>
-
+                      <a class="nav-link" href="Profiles.html">My Profile</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Profiles.html">Logout</a>
                   </li>
                 </ul>
 
               <nav class="navbar navbar-expand-sm bg-ligth navbar-ligth">
                   <form class="form-inline" action="/action_page.php">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-warning" type="submit">Search</button>
-
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-warning" type="submit">Search</button>
                   </form>
               </nav>
+
             </div>
+
         </nav>
 
       </header>
@@ -59,44 +59,53 @@
               <div class="boxprofile">
                    <p>cargar la base de datos de registrarse inicialmente, completar...??? </p>
                       <h3>cargar una Imagen </h3>
-
+                <center>
                   <div class="card" style="width:370px">
-                    <center>
-                      <img src="fotoperfil.png" alt="camera" width="100" height="100">
-
-                      <form action="/action_page.php">
-                          <input type="file" name="" value="Upload"><br><br>
-                              <input type="submit" value="Send">
-                                <script>
+                        <img src="fotoperfil.png" alt="camera" width="100" height="100">
+                          <form action="/action_page.php">
+                            <input type="file" name="" value="Upload"><br><br>
+                                <input type="submit" value="Send">
+                                  <script>
                                     function myFunction() {
                                         var x = document.getElementById("myFile");
                                             x.disabled = true;
                                             }
-                                </script>
-                      </form>
-                    </center>
-                  </div>
-                      <div class="boxinfo">
+                                  </script>
+                          </form>
 
-                            <p>PARA LLENAR LA INFORMACION</p>
-                                <form action="/action_page.php">
-                                    Pais:<br>
-                                          <input type="text" name="firstname" value="text"><br>
+                  </div>
+                </center>
+                      <div class="boxinfo">
+                            <p>Personal Information</p>
+                                  <form action="/action_page.php">
+                                    Change Password:<br>
+                                          <input type="password" name="psw" placeholder="******"><br>
+                                    Confirm Password:<br>
+                                          <input type="password" name="psw" placeholder="****"><br>
+                                    Country:<br>
+                                          <input type="text" name="Country" placeholder="text"><br>
                                     State:<br>
-                                          <input type="text" name="firstname" value="text"><br>
+                                          <input type="text" name="State" placeholder="text"><br>
                                     City:<br>
-                                          <input type="text" name="firstname" value="text"><br>
+                                          <input type="text" name="City" placeholder="text"><br>
                                     Phone:<br>
-                                          <input type="text" name="lastname" value="77777"><br>
+                                          <input type="text" name="Phone" placeholder="77777"><br>
                                           <input type="radio" name="gender" value="male" checked> Male<br>
                                           <input type="radio" name="gender" value="female"> Female<br>
+
                                     Birthday:
                                             <input type="date" name="bday">
                                             <input type="submit" value="Submit">
-                                          </form>
-            </div>
+                                </form>
 
+                      </div>
+              </div>
+          </div>
 
-      </div>
 </body>
+
+<footer id="main-footer">
+          <br><h4>"Para viajar lejos, no hay mejor nave, que un libro!"</h4>
+          <h4>&#169;Todos los derechos reservados. Codigo Binario<h4>
+</footer>
 </html>
