@@ -1,4 +1,3 @@
-# cs50-web-2018-x-projects-1
-Projects1 about Python, Flask and SQL PostgresSQL
+# Project 1
 
-
+Web Programming with Python and JavaScript
