@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block anchor %}
+      <a class="nav-link " href="{{ url_for('logout') }}">
+          <img src="{{url_for('static',filename='logout.png')}}" width="40" height="40" alt="Logout"><h6>Logout</h6>
+      </a>
+
+
+{% endblock %}
+
+
+{% block body %}
+
+{% if message %}
+        <br>
+        <div class="alert alert-light" role="alert">
+            <h4 class="alert-heading"> {{ message }}</h4><br>
+        </div>
+{% endif %}
+
+
+        <br><br><h1> Result of the search:</h1>
+
+        <style>
+
+          table {
+            color: black;
+            background-color: #eae6ca;
+            width: 100%;
+          }
+
+          thead, tbody {
+                padding: 5px;
+                text-align: left;
+                border: 2px solid white;
+
+                  }
+
+
+          @media (min-width: 500px) {
+              body {
+                  font-size:13px;
+                 }
+              }
+          @media (max-width: 499px) {
+                body {
+                font-size: 13px;
+                
+                  }
+                }
+
+        </style>
+
+        <table>
+          <thead>
+          <tr>
+            <th scope="col">Isbn</th>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Year</th>
+            <th scope="col">Searched By</th>
+          </tr>
+          </thead>
+
+          {% for book in table_result %}
+          <tbody>
+            <tr>
+              <th scope="row">
+                <ul>
+                  <a href="{{ url_for('detail_books', book_id = book.id) }}"><b>{{ book.isbn }}</b></a>
+                </ul>
+              </th>
+
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.year}}</td>
+                <td>{{user_email}}</td>
+            </tr>
+          </tbody>
+
+
+    {% endfor %}
+      </table>
+
+{% endblock %}

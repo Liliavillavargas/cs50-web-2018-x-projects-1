@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block anchor %}
+    <a class="nav-link " href="{{ url_for('register') }}">
+      <img src="{{url_for('static',filename='login.png')}}" width="40" height="40" alt="Login"><h6>Login</h6>
+    </a>
+
+
+{% endblock %}
+
+{% block body %}
+      <style>
+          /* Style the content */
+           .content {
+            height: 40px;
+            margin-left: 50px;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+            margin-top: 150px;
+            font-size: 25px;
+            color: white;
+            text-align:center;
+            background-color: rgba(0,0,0,.5);
+            padding: 10px;
+            height: 400px;
+
+          }
+      </style>
+      <div class="content">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/74gcQzio_04"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <br><span><i class="banderacolombia"></i></span>
+
+        <h6>Gracias por visitarnos, Montería, Córdoba, Colombía<img src="{{url_for('static',filename='bandera.jpg')}}" alt="banderacol"></h6>
+      </div>
+
+    {%endblock%}

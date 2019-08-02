@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="{{ url_for('static', filename = 'logo.png') }}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+        <title>CoffeeBook</title>
+
+        <style>
+        @media (min-width: 500px) {
+             body {
+               background-color: #f9fbd0;
+             }
+           }
+           @media (max-width: 499px) {
+             body {
+               background-color: #bfff00;
+             }
+           }
+        </style>
+
+    </head>
+
+    <body class="bg">
+        <nav class="navbar navbar-expand-sm bg" style="background-color: #ffa420;">
+                <!-- logo -->
+                <a class="navbar-brand" href="{{ url_for('index') }}"><h1 style="font-size:3vw ">CoffeeBook<h1></a>
+                <h6>Virtual Library</h6>
+
+        <!-- items-->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    {% block anchor %}
+
+                    {% endblock %}
+                </li>
+            </ul>
+
+
+        </nav>
+        <div class="container container-fluid">
+            {% block body %}
+
+            {% endblock %}
+        </div>
+    </body>
+
+</html>

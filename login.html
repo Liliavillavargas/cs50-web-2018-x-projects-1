@@ -1,0 +1,57 @@
+{% extends 'base_template.html' %}
+
+{% block anchor %}
+
+
+{% endblock %}
+
+{% block body %}
+
+
+    {% if error_message %}
+
+        <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">Error !!! Check it out</h4><br>
+            <h4>
+                {{ error_message }}
+            </h4>
+        </div>
+
+    {% elif message %}
+           <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Registered!!</h4><br>
+            <p>
+                You Are Registered. Enter Login.
+            </p>
+        </div>
+    {% endif %}
+
+
+        <div class="form" >
+        {% if work =='Login' %}
+          <form class="form-signin" action="{{ url_for('login') }} " method="post">
+            <h1 class="h3 mb-3 font-weight-normal text-white"> Login</h1>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Type Email" required="" autofocus="" name="Email">
+            <input id="inputPassword" class="form-control" placeholder="Type Password" required="" type="password" name="Password">
+            <p> Don't have a account ? <a href="{{ url_for('register') }}">Register</a></p>
+
+        {% else %}
+            <form class="form-signin" action="{{ url_for('register') }}" method="post">
+            <h1 class="h3 mb-3 font-weight-normal text-white"> Register</h1>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Type Email" required="" autofocus="" name="Email">
+            <input type="text" id="inputName" class="form-control" placeholder="Type Name" required="" autofocus="" name="name">
+            <input id="inputPassword" class="form-control" placeholder="Type Password" required="" type="password" name="Password">
+            <p> Already Register? <a href="{{url_for('search')}}">Login</a></p>
+        {% endif %}
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit"> {{ work }} </button>
+          </form>
+        </div>
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+
+        <script>
+         $('.message a').click(function (){
+          $('form').animate({height: "toggle", opacity:"toggle"}, "slow");});
+        </script>
+
+{% endblock %}

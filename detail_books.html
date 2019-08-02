@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+
+{% block anchor %}
+      <a class="nav-link " href='{{ url_for('logout') }}'>
+        <img src="{{url_for('static',filename='logout.png')}}" width="40" height="40" alt="Logout"><h6>Logout</h6>
+        <h6>Welcome {{ user_email }}</h6></a>
+
+{% endblock %}
+
+
+{% block body %}
+          <style>
+
+
+            @media (min-width: 500px) {
+             body {
+               background-color: #f9fbd0;
+            }
+         }
+         @media (max-width: 499px) {
+             body {
+               background-color: #bfff00;
+           }
+         }
+              .gird-container {
+                display: flex;
+                justify-content: center;
+                background-color: #151935;
+                margin-top: 50px;
+                grid-column-gap: 20px;
+
+
+
+
+              }
+
+              .gird-container > div {
+                background-color: #3d4999;
+                width: 400px;
+                margin: 15px;
+                text-align: left;
+                line-height: 25px;
+                font-size: 20px;
+                color:white;
+                border: 2px solid #151935 ;
+                border-radius: 10px;
+                p.solid {border-style: solid;}
+              }
+          </style>
+
+          <div class="gird-container">
+              <div class="grid-detail">
+                <br><h5>Book Details:</h5>
+                  <h5>
+                    Book ID:{{book.id}}<br>
+                    ISBN: {{ book.isbn }}<br>
+                    Title: {{ book.title }}<br>
+                    Author: {{ book.author }}<br>
+                    Year: {{ book.year }}<br>
+                  </h5>
+              </div>
+              <div class="grid-detail">
+                <h5>API Goodreads:</h5>
+                  <h5>
+                    Count Ratings : {{ ratings_count }} <br>
+                    Average Rating : {{ average_rating }}<br>
+                  </h5>
+              </div>
+              <div class=gird-detail>
+                <br><h5>Review:</h5>
+                {% for user_email, review in users %}
+                  <h6>{{ user_email }}</h6><br>
+                  <strong>Rating: </strong> {{ review.rating }} <br>
+                  <br><h6>Comment:</h6>
+                  <p>
+                    {{ review.comment }}
+                  </p>
+                  {% endfor %}
+              </div>
+
+              <div class="gird-detail">
+                <br><h5>User Ratings {{user_email}}</h5>
+                  <form action = "{{ url_for('detail_books', book_id=book.id) }}" method="post">
+
+                    <div class="form-group">
+                      <label for="rating">Stars ( 1 - 5)</label>
+                      <select class="form-control" name="rating" id="rating">
+                        {%  for count in range(5) %}
+                        <option value="{{ count+1 }}">{{ count+1 }}</option>
+                        {% endfor %}
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="comment"></label>
+                      <textarea class="form-control" rows="5" name="comment" placeholder="Send your comments"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-success">Submit</button>
+                    </div>
+                  </form>
+              </div>
+          </div>
+{% endblock %}
