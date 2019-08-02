@@ -1,0 +1,31 @@
+.navbar {
+    border-radius: 0;
+}
+
+a.navbar-brand {
+    font-family: 'MachineScript', cursive;
+
+}
+
+h1, h6 {
+  color:white;
+}
+
+ h3,h5 {
+  color:white;
+}
+
+
+/* Template welcome-index*/
+
+        @import url('https://fonts.googleapis.com/css?family=Numans');
+
+ body {
+        background-image: url("biblioteca.jpg");
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        font-family: 'Numans', sans-serif;
+        }
+  

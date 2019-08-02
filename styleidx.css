@@ -1,0 +1,66 @@
+.navbar {
+    border-radius: 0;
+}
+
+a.navbar-brand {
+    font-family: 'MachineScript', cursive;
+
+}
+
+h1,h6{
+  color:white;
+}
+
+/* Template welcome-index*/
+
+        @import url('https://fonts.googleapis.com/css?family=Numans');
+
+ body {
+        background-image: url("diapositiva1.jpg");
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+        font-family: 'Numans', sans-serif;
+
+        }
+
+p {
+       color:white;
+}
+.form {
+        position: relative;
+        z-index: 1;
+        background: rgba(0,0,0,.5);
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding:45px;
+        text-align: center;
+        margin-top: 80px;
+
+   }
+.form input{
+        font-family: "Roboto", sans-serif;
+        outline:1;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding:15px;
+        box-sizing: border-box;
+        font-size: 14px;
+             }
+.form button {
+        font-family: "Roboto", sans-serif;
+        outline:0;
+        background: #4caf50;
+        width: 100%;
+        border: 0;
+        padding:15px;
+        color: #ffffff;
+        font-size: 14px;
+        cursor:pointer;
+         }
+.form button:hover, .form button:active{
+        background: #43a047;
+               }
